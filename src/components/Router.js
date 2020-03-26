@@ -5,6 +5,7 @@ import Media from './media/Media';
 import Code from './code/Code';
 import Contact from './contact/Contact';
 import NotFound from './NotFound';
+import Navigation from './partials/Navigation';
 
 
 const Router = () => (
@@ -14,7 +15,7 @@ const Router = () => (
             <Route exact path="/media" component={Media} />
             <Route exact path="/code" component={Code} />
             <Route exact path="/contact" component={Contact} />
-            <Route component={NotFound}/>
+            <Route component={NotFound} />
         </Switch>
     </BrowserRouter>
 )
