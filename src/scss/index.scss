@@ -1,4 +1,9 @@
 body {
+    background-image: url('../assets/images/topo-bg.jpg');
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+    background-attachment: fixed;
     background-color: #2a482e;
     h1, ul, a {
         color: white;
