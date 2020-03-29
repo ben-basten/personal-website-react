@@ -1,11 +1,10 @@
 import React from 'react';
 import { BrowserRouter, Route, Switch } from 'react-router-dom';
-import Home from './home/Home';
-import Media from './media/Media';
-import Code from './code/Code';
-import Contact from './contact/Contact';
-import NotFound from './NotFound';
-import Navigation from './partials/Navigation';
+import Home from '../pages/home';
+import Media from '../pages/media';
+import Code from '../pages/code';
+import Contact from '../pages/contact';
+import NotFound from '../pages/404';
 
 
 const Router = () => (

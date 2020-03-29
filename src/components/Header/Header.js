@@ -1,6 +1,6 @@
 import React from 'react';
 
-class Navigation extends React.Component {
+class Header extends React.Component {
     render() {
         return(
             <ul>
@@ -13,4 +13,4 @@ class Navigation extends React.Component {
     }
 }
 
-export default Navigation;
+export default Header;

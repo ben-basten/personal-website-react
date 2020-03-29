@@ -1,13 +1,13 @@
 import React from 'react';
 import Router from './Router';
-import Navigation from './partials/Navigation';
-require('../scss/index.scss');
+import Header from './Header/Header';
+require('../scss/main.scss');
 
 class App extends React.Component {
     render() {
         return (
             <div className="app">
-                <Navigation />
+                <Header />
                 <Router />
             </div>
         );
