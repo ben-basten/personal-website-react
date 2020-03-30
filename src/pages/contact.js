@@ -1,10 +1,11 @@
 import React from 'react';
-import PropTypes from 'prop-types';
+import Sidebar from '../components/Sidebar/Sidebar';
+// import PropTypes from 'prop-types';
 
 class Contact extends React.Component {
     render() {
         return (
-            <h1>Contact</h1>
+            <Sidebar pageName="contact" />
         )
     }
 }

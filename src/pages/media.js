@@ -1,10 +1,10 @@
 import React from 'react';
-import PropTypes from 'prop-types';
+import Sidebar from '../components/Sidebar/Sidebar';
 
 class Media extends React.Component {
     render() {
         return (
-            <h1>Media</h1>
+            <Sidebar pageName="media" />
         )
     }
 }
