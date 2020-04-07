@@ -11,3 +11,10 @@ body {
 
     overflow-y: scroll;
 }
+
+.body {
+    display: grid;
+    grid-template-columns: 70px 1fr 70px;
+    grid-gap: 15px;
+    margin-top: 50px;
+}
