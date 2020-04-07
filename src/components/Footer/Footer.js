@@ -1,7 +1,9 @@
 import React from 'react';
 
 const Footer = () => (
-    <h1>I AM THE FOOTER</h1>
+    <footer>
+        <h1>I AM THE WALRUS</h1>
+    </footer>
 );
 
 export default Footer;

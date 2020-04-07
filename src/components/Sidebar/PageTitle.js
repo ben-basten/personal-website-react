@@ -1,7 +1,7 @@
 import React from 'react';
 import { withRouter } from "react-router-dom";
 
-class Sidebar extends React.Component {
+class PageTitle extends React.Component {
 
     render() {
         var header = this.props.location.pathname.substring(1);
@@ -10,11 +10,11 @@ class Sidebar extends React.Component {
         else if (header !== "media" && header !== "code" && header !== "contact") header = "404";
 
         return(
-            <div className="sidebar">
+            <div className="page-title">
                 <h1>{header}</h1>
             </div>
         );
     }
 }
 
-export default withRouter(Sidebar);
+export default withRouter(PageTitle);

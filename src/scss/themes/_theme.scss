@@ -12,9 +12,24 @@ body {
     overflow-y: scroll;
 }
 
-.body {
+.page {
+    height: 99vh;
+    display: grid;
+    grid-template-rows: auto 1fr auto;
+    grid-template-areas:
+    "header"
+    "content"
+    "footer";
+}
+
+// includes title sidebar, content, and socials sidebar
+.page-middle {
     display: grid;
     grid-template-columns: 70px 1fr 70px;
     grid-gap: 15px;
     margin-top: 50px;
+}
+
+.content {
+    display: grid;
 }

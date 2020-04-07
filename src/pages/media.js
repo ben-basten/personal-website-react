@@ -4,7 +4,7 @@ import Gallery from '../components/Media/Gallery';
 class Media extends React.Component {
     render() {
         return (
-            <div>
+            <div className="content">
                 <Gallery />
             </div>
         )
