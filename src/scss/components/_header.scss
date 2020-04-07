@@ -1,14 +1,55 @@
 nav {
+    margin: 20px 30px 20px 30px;
+    // header stays at top of page
+    position: sticky;
+    top: 20px;
+
     ul {
         list-style-type: none;
+        margin: 0;
+        padding: 0;
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-gap: 10px;
+        grid-auto-flow: column;
+    }
+
+    li {
+        color: $brown-light;
+        
+        &.spacer {
+            font-weight: bold;
+            font-size: 2rem;
+        }
     }
 
     a {
         text-decoration: none;
+        margin: 3px 8px 0px 8px;
+        font-size: 1.75rem;
         color: $brown-light;
 
         &:hover {
             border-bottom: 2px solid $mustard;
+            color: $brown-light;
+            text-decoration: none;
         }
+
+        &.active {
+            border-bottom: 2px solid $mustard;
+        }
+    }
+
+    // hemlock
+    img {
+        position: absolute;
+        left: -140px;
+        top: -150px;
+        z-index: -1;
+        filter: drop-shadow(0px 0px 10px $forest);
+    }
+
+    .home {
+        text-shadow: 0px 0px 8px black;
     }
 }

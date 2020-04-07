@@ -1,19 +1,11 @@
 body {
     background-image: url('../../assets/images/topo-bg.jpg');
     background-repeat: no-repeat;
-    background-position: center center;
+    background-position: left top;
     background-size: cover;
     background-attachment: fixed;
     background-color: $forest;
 
     font-family: dubai, sans-serif;
-}
-
-h1 {
-    color: $brown-light;
-    letter-spacing: 5px;
-    writing-mode: vertical-rl;
-    text-orientation: mixed;
-    font-size: 500%;
-    margin-left: -52px;
+    font-size: 16px;
 }

@@ -1,5 +1,6 @@
 import React from 'react';
 import { BrowserRouter, Route, Switch } from 'react-router-dom';
+import Header from '../components/Header/Header';
 import Home from '../pages/home';
 import Media from '../pages/media';
 import Code from '../pages/code';
@@ -9,6 +10,7 @@ import NotFound from '../pages/404';
 
 const Router = () => (
     <BrowserRouter>
+        <Header />
         <Switch>
             <Route exact path="/" component={Home} />
             <Route exact path="/media" component={Media} />
