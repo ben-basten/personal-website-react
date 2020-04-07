@@ -1,7 +1,8 @@
 import React from 'react';
+import Sidebar from '../components/Sidebar/Sidebar';
 
 const NotFound = () => (
-    <h1>404</h1>
+    <Sidebar pageName="404" />
 );
 
 export default NotFound;

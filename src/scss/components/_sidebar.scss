@@ -1,14 +1,17 @@
-h1 {
-    color: $brown-light;
-    letter-spacing: 5px;
-    writing-mode: vertical-rl;
-    text-orientation: mixed;
-    font-size: 500%;
-    position: relative;
-    margin: 0;
-    left: -25px;
-    z-index: -2;
+.sidebar {
+    margin-top: 100px;
 
-    //temp
-    margin-top: 80px;
+    h1 {
+        color: $brown-light;
+        letter-spacing: 5px;
+        writing-mode: vertical-rl;
+        text-orientation: mixed;
+        font-size: 5rem;
+        position: relative;
+        margin: 0;
+        left: -25px;
+        z-index: -2;
+        display: table;
+        height: auto;
+    }
 }

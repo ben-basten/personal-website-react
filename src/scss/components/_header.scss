@@ -1,52 +1,57 @@
 nav {
-    margin: 20px 30px 20px 30px;
+    margin: 0px 30px 0px 30px;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-gap: 10px;
+    grid-auto-flow: column;
     // header stays at top of page
     position: sticky;
     top: 20px;
 
-    ul {
-        list-style-type: none;
-        margin: 0;
-        padding: 0;
-        display: grid;
-        grid-template-columns: 1fr;
-        grid-gap: 10px;
-        grid-auto-flow: column;
+    span.spacer {
+        color: $brown-light;
+        font-weight: bold;
+        font-size: 1.9rem;
     }
 
-    li {
+    .nav-link {
+        text-decoration: none;
+        margin: 0px 8px 0px 8px;
+        padding: 0px 10px 0px 10px;
+        font-size: 1.75rem;
         color: $brown-light;
-        
-        &.spacer {
-            font-weight: bold;
-            font-size: 2rem;
+        position: relative;
+        z-index: 2;
+
+        &.nav-link--active .inner-link {
+            border-bottom: 2px solid $mustard;
+        }
+
+        &.nav-link-home--active {
+            color: $mustard;
+        }
+
+        &.home {
+            display: table;
         }
     }
 
-    a {
-        text-decoration: none;
-        margin: 3px 8px 0px 8px;
-        font-size: 1.75rem;
-        color: $brown-light;
+    .inner-link {
+        display: table;
+        border-bottom: 2px solid transparent;
 
         &:hover {
             border-bottom: 2px solid $mustard;
-            color: $brown-light;
-            text-decoration: none;
-        }
-
-        &.active {
-            border-bottom: 2px solid $mustard;
         }
     }
 
-    // hemlock
+    // hemlock in the header
     img {
         position: absolute;
         left: -140px;
         top: -150px;
-        z-index: -1;
-        filter: drop-shadow(0px 0px 10px $forest);
+        z-index: 1;
+        filter: drop-shadow(0px 0px 5px $forest);
     }
 
     .home {
