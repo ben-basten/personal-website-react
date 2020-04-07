@@ -1,9 +1,20 @@
 import React from 'react';
+import { withRouter } from "react-router-dom";
 
-const Sidebar = (props) => (
-    <div className="sidebar">
-        <h1>{props.pageName}</h1>
-    </div>
-);
+class Sidebar extends React.Component {
 
-export default Sidebar;
+    render() {
+        var header = this.props.location.pathname.substring(1);
+        
+        if(header === "") header = "home";
+        else if (header !== "media" && header !== "code" && header !== "contact") header = "404";
+
+        return(
+            <div className="sidebar">
+                <h1>{header}</h1>
+            </div>
+        );
+    }
+}
+
+export default withRouter(Sidebar);
