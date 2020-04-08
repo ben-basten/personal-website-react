@@ -11,6 +11,7 @@ class PageTitle extends React.Component {
 
         return(
             <div className="page-title">
+                <div className="line"></div>
                 <h1>{header}</h1>
             </div>
         );

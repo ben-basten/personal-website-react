@@ -1,5 +1,27 @@
 .socials {
-    a {
+    position: relative;
+
+    .icons {
         position: fixed;
+        bottom: 205px;
+        text-align: center;
+    }
+
+    .line {
+        position: fixed;
+        height: 150px;
+        right: 38px;
+        // the bottom of the line will need to change
+        bottom: 55px;
+        background: linear-gradient(to top, rgba(172,163,131,0), rgba(172,163,131,1), rgba(172,163,131,1))
+    }
+
+    img {
+        padding-top: 5px;
+        width: 60%;
+
+        // &:hover {
+        //     margin-bottom: 5px;
+        // }
     }
 }

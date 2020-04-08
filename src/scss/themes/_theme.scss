@@ -13,6 +13,7 @@ body {
 }
 
 .page {
+    // slight scroll if 100vh
     height: 99vh;
     display: grid;
     grid-template-rows: auto 1fr auto;
@@ -32,4 +33,11 @@ body {
 
 .content {
     display: grid;
+}
+
+.line {
+    position: relative;
+    width: 4px;
+    background-color: $brown-light;
+    z-index: -1;
 }

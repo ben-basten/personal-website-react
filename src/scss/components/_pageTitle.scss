@@ -1,6 +1,4 @@
 .page-title {
-    margin-top: 100px;
-
     h1 {
         color: $brown-light;
         letter-spacing: 5px;
@@ -13,5 +11,12 @@
         z-index: -2;
         display: table;
         height: auto;
+        top: 225px;
+    }
+
+    .line {
+        position: fixed;
+        left: 15px;
+        height: 125px;    
     }
 }

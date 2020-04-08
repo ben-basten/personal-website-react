@@ -1,9 +1,16 @@
 import React from 'react';
+import Instagram from '../../assets/vectors/insta.svg';
+import GitHub from '../../assets/vectors/github.svg';
+import YouTube from '../../assets/vectors/youtube.svg';
 
 const Socials = () => (
     <div className="socials">
-        <a href="http://instagram.com/ben.basten2" target="_blank" rel="noopener noreferrer">Instagram</a><br/>
-        <a href="https://www.youtube.com/channel/UC4QJKs4omKo_cDSVvPC1nEA" target="_blank" rel="noopener noreferrer">YouTube</a>
+        <div className="icons">
+            <img src={YouTube} className="svg" alt="social"/>
+            <img src={GitHub} className="svg" alt="social"/>
+            <img src={Instagram} className="svg" alt="social"/>
+        </div>
+        <div className="line"></div>
     </div>
 );
 
