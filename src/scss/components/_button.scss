@@ -1,0 +1,22 @@
+.button {
+    display: table;
+    padding: 3px 10px 3px 10px;
+    font-size: 1.15rem;
+    border: 2px solid $mustard;
+    border-radius: 8px;
+    color: $mustard;
+
+    a {
+        color: inherit;
+
+        &:hover {
+            text-decoration: none;
+        }
+    }
+
+    &:hover {
+        cursor: pointer;
+        background-color: $mustard;
+        color: $grey;
+    }
+}

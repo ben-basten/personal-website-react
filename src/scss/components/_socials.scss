@@ -3,22 +3,22 @@
 
     .icons {
         position: fixed;
-        bottom: 205px;
+        bottom: 203px;
         text-align: center;
     }
 
     .line {
         position: fixed;
-        height: 150px;
+        height: 200px;
         right: 38px;
-        // the bottom of the line will need to change
-        bottom: 55px;
-        background: linear-gradient(to top, rgba(172,163,131,0), rgba(172,163,131,1), rgba(172,163,131,1))
+        bottom: 0px;
+        // background: linear-gradient(to top, rgba(172,163,131,0), rgba(172,163,131,1), rgba(172,163,131,1))
+        background: $brown-light;
     }
 
     img {
         padding-top: 5px;
-        width: 60%;
+        width: 55%;
 
         // &:hover {
         //     margin-bottom: 5px;
