@@ -15,19 +15,19 @@ class Header extends React.Component {
                         </div>
                     </NavLink> 
                 </div>
-                <NavLink activeClassName="nav-link--active" className="nav-link" to="/media">
+                <NavLink activeClassName="nav-link--active" className="nav-link right" to="/media">
                     <div className="inner-link">
                         media
                     </div>    
                 </NavLink> 
                 <span className="spacer">&middot;</span>
-                <NavLink activeClassName="nav-link--active" className="nav-link" to="/code">
+                <NavLink activeClassName="nav-link--active" className="nav-link right" to="/code">
                     <div className="inner-link">
                         code
                     </div>
                 </NavLink> 
                 <span className="spacer">&middot;</span>
-                <NavLink activeClassName="nav-link--active" className="nav-link" to="/contact">
+                <NavLink activeClassName="nav-link--active" className="nav-link right" to="/contact">
                     <div className="inner-link">
                         contact
                     </div>

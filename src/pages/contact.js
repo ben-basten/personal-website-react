@@ -4,7 +4,7 @@ class Contact extends React.Component {
     render() {
         return (
             <div className="content">
-                <h2>code sample</h2>
+                <h2>contact sample</h2>
             </div>
         )
     }
