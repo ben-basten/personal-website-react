@@ -1,14 +1,14 @@
 import React from 'react';
-import Instagram from '../../assets/vectors/insta.svg';
-import GitHub from '../../assets/vectors/github.svg';
-import YouTube from '../../assets/vectors/youtube.svg';
+import {ReactComponent as GitHub} from '../../assets/vectors/github.svg';
+import {ReactComponent as YouTube} from '../../assets/vectors/youtube.svg';
+import {ReactComponent as Instagram} from '../../assets/vectors/insta.svg';
 
 const Socials = () => (
     <div className="socials">
         <div className="icons">
-            <img src={YouTube} className="svg" alt="social"/>
-            <img src={GitHub} className="svg" alt="social"/>
-            <img src={Instagram} className="svg" alt="social"/>
+            <a href="https://github.com/ben-basten" target="_blank" rel="noopener noreferrer"><GitHub /></a>
+            <a href="https://www.youtube.com/channel/UC4QJKs4omKo_cDSVvPC1nEA" target="_blank" rel="noopener noreferrer"><YouTube /></a>
+            <a href="https://www.instagram.com/ben.basten2/" target="_blank" rel="noopener noreferrer"><Instagram /></a>
         </div>
         <div className="line"></div>
     </div>
